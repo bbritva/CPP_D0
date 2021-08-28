@@ -13,6 +13,7 @@ public:
 	Phonebook();
 	~Phonebook();
 	void add_contact();
+	void show_all();
 };
 
 

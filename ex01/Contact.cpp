@@ -25,4 +25,23 @@ void Contact::add(int index)
 	std::cin >> this->darkest_secret;	
 }
 
+void show_str(std::string str)
+{
+	if (str.length() > 9)
+		str[9] = '.';
+	std:: cout << "|" << std::setw(10) << str.substr(0, 10);
+}
+
+void Contact::show_short() const
+{
+	std:: cout << "|" << std::setw(10) << this->index;
+	show_str(this->first_name);
+	show_str(this->last_name);
+	show_str(this->nickname);
+	std:: cout << "|" << std::endl;
+	
+
+}
+
+
 

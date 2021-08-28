@@ -3,6 +3,8 @@
 
 # include <string>
 # include <iostream>
+# include <iomanip>
+
 
 class Contact
 {
@@ -17,6 +19,7 @@ public:
 	Contact();	
 	~Contact();
 	void add(int index = 0);
+	void show_short() const;
 };
 
 

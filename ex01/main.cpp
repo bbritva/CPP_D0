@@ -23,7 +23,10 @@ int main()
 			phonebook.add_contact();
 		}
 		else if (command == "SEARCH")
+		{
 			std::cout << "SEARCH command" << std::endl;
+			phonebook.show_all();
+		}
 		else 
 			std::cout << "Wrong command" << std::endl;
 
