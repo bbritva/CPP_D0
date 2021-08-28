@@ -43,7 +43,7 @@ void Phonebook::show_all(){
 	{
 		std::cout << "Wrong index!" << std::endl;
 		std::cin.clear();
-		std::cin.ignore();
+		std::cin.ignore(10000, '\n');
 	}
 	else if (counter < 0 || counter > (this->contactsAmount - 1))
 		std:: cout << "Wrong index!" << std::endl;

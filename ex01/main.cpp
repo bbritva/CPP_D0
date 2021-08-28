@@ -14,24 +14,17 @@ int main()
 	while (true)
 	{
 		std::cout << ">>";
-		std::cin >> command;
+		getline(std::cin, command);
 		if (std::cin.fail())
 			return (0);
 		if (command == "EXIT")
 			break ;
 		else if (command == "ADD")
-		{
-			std::cout << "ADD command" << std::endl;
 			phonebook.add_contact();
-		}
 		else if (command == "SEARCH")
-		{
-			std::cout << "SEARCH command" << std::endl;
 			phonebook.show_all();
-		}
 		else 
 			std::cout << "Wrong command" << std::endl;
-
 	}
 	std::cout << "Phonebook stopped. All data cleared." << std::endl;
 	return (0);
