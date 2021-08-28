@@ -1,7 +1,7 @@
 NAME		=	phonebook
 CPP			=	clang++ $(CFLAGS)
 RM			=	rm -f
-CFLAGS		=	-Wall -Wextra -Werror -I./include
+CFLAGS		=	-Wall -Wextra -Werror -I./include -std=c++98
 SRCS		=	main.cpp Contact.cpp Phonebook.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 HDR			=	includes/philo_main.h

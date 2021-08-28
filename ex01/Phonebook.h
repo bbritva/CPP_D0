@@ -8,7 +8,10 @@ class Phonebook
 private:
 	Contact contacts[8];
 	int contactsAmount;
+	int eldestContact;
 public:
+	Phonebook();
+	~Phonebook();
 	void add_contact();
 };
 

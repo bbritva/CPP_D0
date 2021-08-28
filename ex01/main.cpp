@@ -18,7 +18,10 @@ int main()
 		if (command == "EXIT")
 			break ;
 		else if (command == "ADD")
+		{
 			std::cout << "ADD command" << std::endl;
+			phonebook.add_contact();
+		}
 		else if (command == "SEARCH")
 			std::cout << "SEARCH command" << std::endl;
 		else 
@@ -26,6 +29,5 @@ int main()
 
 	}
 	std::cout << "Phonebook stopped. All data cleared." << std::endl;
-
 	return 0;
 }
