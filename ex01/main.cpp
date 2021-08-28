@@ -15,6 +15,8 @@ int main()
 	{
 		std::cout << ">>";
 		std::cin >> command;
+		if (std::cin.fail())
+			return (0);
 		if (command == "EXIT")
 			break ;
 		else if (command == "ADD")
@@ -32,5 +34,5 @@ int main()
 
 	}
 	std::cout << "Phonebook stopped. All data cleared." << std::endl;
-	return 0;
+	return (0);
 }

@@ -50,6 +50,8 @@ void Phonebook::show_all(){
 	std:: cout << "_____________________________________________" << std::endl;
 	std:: cout << "Enter index for full information: ";
 	std::cin >> counter;
+	if (std::cin.fail())
+		return;
 	if (counter < 0 || counter > (this->contactsAmount - 1))
 		std:: cout << "Wrong index!" << std::endl;
 	else

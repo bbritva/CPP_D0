@@ -15,14 +15,24 @@ void Contact::add(int index)
 	this->index = index;
 	std::cout << "Enter first name: ";
 	std::cin >> this->first_name;
+	if (std::cin.fail())
+		return;
 	std::cout << "Enter last name: ";
 	std::cin >> this->last_name;
+	if (std::cin.fail())
+		return;
 	std::cout << "Enter nickname: ";
 	std::cin >> this->nickname;
+	if (std::cin.fail())
+		return;
 	std::cout << "Enter phone_number: ";
 	std::cin >> this->phone_number;
+	if (std::cin.fail())
+		return;
 	std::cout << "Enter darkest secret: ";
-	std::cin >> this->darkest_secret;	
+	std::cin >> this->darkest_secret;
+	if (std::cin.fail())
+		return;
 }
 
 void show_str(std::string str)
