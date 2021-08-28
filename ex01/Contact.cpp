@@ -7,12 +7,12 @@ Contact::Contact()
 
 Contact::~Contact()
 {
-	return;
+	
 }
 
-void Contact::add(int index)
+void Contact::add(int i)
 {
-	this->index = index;
+	this->index = i;
 	std::cout << "Enter first name: ";
 	std::cin >> this->first_name;
 	if (std::cin.fail())

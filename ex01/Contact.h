@@ -5,7 +5,6 @@
 # include <iostream>
 # include <iomanip>
 
-
 class Contact
 {
 private:
@@ -18,11 +17,9 @@ private:
 public:
 	Contact();	
 	~Contact();
-	void add(int index = 0);
+	void add(int i = 0);
 	void show_short() const;
 	void show_full() const;
 };
-
-
 
 #endif //CPP_D0_CONTACT_H
