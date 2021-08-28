@@ -20,6 +20,7 @@ public:
 	~Contact();
 	void add(int index = 0);
 	void show_short() const;
+	void show_full() const;
 };
 
 

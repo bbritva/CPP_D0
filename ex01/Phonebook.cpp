@@ -3,6 +3,7 @@
 Phonebook::Phonebook()
 {
 	this->contactsAmount = 0;
+	this->eldestContact = 0;
 }
 
 Phonebook::~Phonebook()
@@ -38,13 +39,20 @@ sense, define a relevant behavior.
  */
 
 void Phonebook::show_all(){
-	uint8_t	counter;
+	int	counter;
 	
-	std:: cout << "_____________________________________________" << std::endl;
+	std::cout << "_____________________________________________" << std::endl;
 	std:: cout << "|Index     |First name|Last name |Nickname  |" << std::endl;
 	std:: cout << "|----------|----------|----------|----------|" << std::endl;
 	counter = -1;
 	while (++counter < this->contactsAmount)
 		this->contacts[counter].show_short();
-	std:: cout << "|----------|----------|----------|----------|" << std::endl;
+	std:: cout << "_____________________________________________" << std::endl;
+	std:: cout << "Enter index for full information: ";
+	std::cin >> counter;
+	if (counter < 0 || counter > (this->contactsAmount - 1))
+		std:: cout << "Wrong index!" << std::endl;
+	else
+		this->contacts[counter].show_full();
+	
 }
