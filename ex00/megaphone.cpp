@@ -20,9 +20,7 @@ int main(int argc, char *argv[])
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
 	else
 		while (++i < argc)
-		{
 			scream(argv[i]);
-		}
 	std::cout << std::endl;
 	return 0;
 }
