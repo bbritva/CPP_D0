@@ -46,7 +46,13 @@ void Phonebook::show_all(){
 		std::cin.ignore(10000, '\n');
 	}
 	else if (counter < 0 || counter > (this->contactsAmount - 1))
-		std:: cout << "Wrong index!" << std::endl;
+	{
+		std::cout << "Wrong index!" << std::endl;
+		std::cin.ignore(10000, '\n');
+	}	
 	else
+	{
 		this->contacts[counter].show_full();
+		std::cin.ignore(10000, '\n');
+	}
 }

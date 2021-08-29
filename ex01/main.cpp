@@ -11,7 +11,7 @@ int main()
 	std::cout << "ADD - To add contact in your phonebook" << std::endl;
 	std::cout << "SEARCH - To search contact in your phonebook" << std::endl;
 	std::cout << "EXIT - To exit from your phonebook" << std::endl;
-	while (true)
+	while (!std::cin.fail())
 	{
 		std::cout << ">>";
 		getline(std::cin, command);
