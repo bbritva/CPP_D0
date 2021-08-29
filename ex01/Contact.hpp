@@ -1,5 +1,5 @@
-#ifndef CPP_D0_CONTACT_H
-# define CPP_D0_CONTACT_H
+#ifndef CPP_D0_CONTACT_HPP
+# define CPP_D0_CONTACT_HPP
 
 # include <string>
 # include <iostream>
@@ -22,4 +22,4 @@ public:
 	void show_full() const;
 };
 
-#endif //CPP_D0_CONTACT_H
+#endif //CPP_D0_CONTACT_HPP
