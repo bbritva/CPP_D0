@@ -1,4 +1,4 @@
-#include "Phonebook.h"
+#include "Phonebook.hpp"
 
 Phonebook::Phonebook()
 {
@@ -31,28 +31,22 @@ void Phonebook::show_all(){
 	int	counter;
 	
 	std::cout << "_____________________________________________" << std::endl;
-	std:: cout << "|Index     |First name|Last name |Nickname  |" << std::endl;
-	std:: cout << "|----------|----------|----------|----------|" << std::endl;
+	std::cout << "|Index     |First name|Last name |Nickname  |" << std::endl;
+	std::cout << "|----------|----------|----------|----------|" << std::endl;
 	counter = -1;
 	while (++counter < this->contactsAmount)
 		this->contacts[counter].show_short();
-	std:: cout << "_____________________________________________" << std::endl;
-	std:: cout << "Enter index for full information: ";
+	std::cout << "_____________________________________________" << std::endl;
+	std::cout << "Enter index for full information: ";
 	std::cin >> counter;
 	if (std::cin.fail())
 	{
 		std::cout << "Wrong index!" << std::endl;
 		std::cin.clear();
-		std::cin.ignore(10000, '\n');
 	}
 	else if (counter < 0 || counter > (this->contactsAmount - 1))
-	{
 		std::cout << "Wrong index!" << std::endl;
-		std::cin.ignore(10000, '\n');
-	}	
 	else
-	{
 		this->contacts[counter].show_full();
-		std::cin.ignore(10000, '\n');
-	}
+	std::cin.ignore(10000, '\n');
 }

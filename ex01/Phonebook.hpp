@@ -1,7 +1,9 @@
-#ifndef EX01_PHONEBOOK_H
-# define EX01_PHONEBOOK_H
+#ifndef EX01_PHONEBOOK_HPP
+# define EX01_PHONEBOOK_HPP
 
-# include "Contact.h"
+# include "Contact.hpp"
+# include <iostream>
+
 
 class Phonebook
 {
@@ -17,4 +19,4 @@ public:
 };
 
 
-#endif //EX01_PHONEBOOK_H
+#endif //EX01_PHONEBOOK_HPP
